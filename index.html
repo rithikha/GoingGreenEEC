@@ -57,7 +57,7 @@ map.on('load', function () {
 	map.on('click', 'goinggreenpopulation', function(e) {
 		new mapboxgl.Popup()
 		.setLngLat(e.lngLat)
-		.setHTML(e.features[0].properties.population)
+		.setHTML("population:" + " " + e.features[0].properties.population)
 		.addTo(map);
 	});
 
